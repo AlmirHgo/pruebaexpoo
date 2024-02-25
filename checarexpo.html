@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definición formal de relación</title>
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <!-- Tema y estilos adicionales -->
+    <style>
+        /* Estilos adicionales personalizados */
+        .cover {
+            text-align: center;
+            padding-top: 20%;
+        }
+
+        .cover h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+        }
+
+        .cover p {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        /* Estilos para la diapositiva de explicación */
+        .explanation {
+            padding: 10% 5%;
+            text-align: left;
+        }
+
+        .explanation h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .explanation p {
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Portada -->
+            <section class="cover">
+                <h1>Definición formal de relación</h1>
+                <p>Autores: Equipo Fantasmas ISC 53</p>
+            </section>
+
+            <!-- Diapositiva de explicación -->
+            <section class="explanation">
+                <h2>¿Qué es una relación en bases de datos?</h2>
+                <p>En el contexto de bases de datos, una relación se refiere a la estructura que organiza los datos de una manera tabular, similar a una tabla de Excel.</p>
+                <p>Una relación consta de filas y columnas, donde cada fila representa una instancia individual de datos y cada columna representa un atributo o una característica de esos datos.</p>
+                <p>Las relaciones son la base del modelo relacional de bases de datos, que es uno de los modelos más comunes y ampliamente utilizados en la gestión de datos.</p>
+            </section>
+
+            <!-- Diapositiva de Cabecera de Relación -->
+            <section class="explanation">
+                <h2>Cabecera de la Relación</h2>
+                <p>La cabecera de una relación especifica los nombres de los atributos o columnas de la relación.</p>
+                <p>Por ejemplo, si tienes una relación de "Estudiantes", los atributos podrían ser "ID", "Nombre", "Edad", etc.</p>
+            </section>
+
+            <!-- Diapositiva de Cuerpo de Relación -->
+            <section class="explanation">
+                <h2>Cuerpo de la Relación</h2>
+                <p>El cuerpo de una relación contiene las instancias individuales de datos, representadas como filas o tuplas.</p>
+                <p>Cada fila en el cuerpo de la relación contiene valores para cada uno de los atributos definidos en la cabecera.</p>
+                <p>Por ejemplo, una fila en una relación de "Estudiantes" podría contener los siguientes valores: ID=1, Nombre="Juan", Edad=20.</p>
+            </section>
+
+            <!-- Diapositiva de Estado de Relación -->
+            <section class="explanation">
+                <h2>Estado de la Relación "r"</h2>
+                <p>El estado de una relación "r" se refiere al número de instancias de datos o tuplas que contiene.</p>
+                <p>Por ejemplo, si tienes una relación "Estudiantes" y contiene 100 tuplas, entonces el estado de la relación "r" sería 100.</p>
+            </section>
+
+            <!-- Diapositiva de Esquema de Relación -->
+            <section class="explanation">
+                <h2>Esquema de Relación</h2>
+                <p>El esquema de relación define la estructura de una relación, especificando los nombres de los atributos, los tipos de datos y cualquier restricción.</p>
+                <p>Por ejemplo, el esquema de una relación de "Estudiantes" podría ser: (ID: entero, Nombre: cadena, Edad: entero).</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script>
+        // Configuración de Reveal.js
+        Reveal.initialize({
+            // Configuración personalizada
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            // Desactivar el desplazamiento de diapositivas
+            slideNumber: 'c/t', // Cambia la visualización de números de diapositivas
+            keyboard: {
+                39: 'next', // Tecla de flecha derecha: ir a la siguiente diapositiva
+                37: 'prev' // Tecla de flecha izquierda: ir a la diapositiva anterior
+            },
+            transition: 'fade', // Cambia a una transición de fundido (fade)
+            // transition: 'slide', // Puedes cambiar el tipo de transición aquí
+            // Más opciones de configuración pueden añadirse según necesites
+        });
+    </script>
+</body>
+
+</html>
+
+
